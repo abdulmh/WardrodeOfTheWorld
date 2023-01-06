@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Wardrobe of the World</title>
+    <!--import url for Google font Pacifico--> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+    </style>
+</head>
+<body>
+    <div class="img_source">
+    <img src="assets/spool.png" alt="spool with sewing pins and thread" width="150" height="150" style="float: right">
+    <h1>Wardrobe of the World</h1>
+    <img src="assets/spool.png" alt="spool with sewing pins and thread" width="150" height="150">
+    </div>
+    <main>
+
+     <!--side menu html-->
+    <div class="explore">
+        <h2 id="menu">Choose a topic & explore</h2>
+        <nav>
+        <ul class="cf">
+            <li><a href="tradition_culture.html">Tradition vs. Culture</a></li>
+            <li><a class="dropdown" href="#">Religious Wardrobe</a>
+                <ul>
+                    <li><a href="islam.html">Islam</a></li>
+                    <li><a href="#">Christianity</a></li>
+                    <li><a href="#"> Buddhism</a></li>
+                    <li><a href="#">Hinduism</a></li>
+                    <li><a href="#">Navajo</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown" href="#">Traditional Wardrobe</a>
+                <ul>
+                    <li><a href="africa.html">Africa</a></li>
+                    <li><a href="asia.html">Asia</a></li>
+                    <li><a href="#"> Europe</a></li>
+                    <li><a href="#">South America</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    <div class="intro">
+        <h2>Welcome to Wardrobe of the World!</h2><!--No 'bold,' this should be in the h2 CSS, give the h2 a font-weight.-->
+        <p>
+            This site highlights religious and traditional clothing around the globe. 
+            Learn about the differences between tradition and culture, explore the beauty of fashion, and feel the cultural significance of the dresses. 
+            Check out traditional men's and women's clothing, 
+            scarves, accessories, modern alterations, and more. 
+            Each category features amazing photos and captions to truly take you to each location.
+        </p>
+        </div>
+
+<form class="subform"  method="post" action="submit.html">
+    <h2 class="formHead2">Leave a suggestion!</h2>
+    <p>
+        <label for="name" class="label">What is your name?</label>
+        <input type="text" name="name" id="name">
+    </p>
+    <p>
+        <label for="comments" class="label">Leave a comment here!</label>
+        <textarea name="comments" cols="35" rows="4" id="comments"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Sumbit">
+    </p>
+    </form>
+    <div class="globe"></div>
+</body>
+</html>

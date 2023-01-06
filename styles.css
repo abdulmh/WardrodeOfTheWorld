@@ -1,0 +1,249 @@
+body{
+    background-color: #a6b6cb;
+    
+ }
+ 
+ main{
+     width: 90%;
+     margin:  0 auto;
+     text-align: center;
+ }
+ /*site title*/
+ h1{
+     font-family: Pacifico;
+     color: #492c99;
+     text-align: center;
+     font-size: 70px;
+     text-decoration: none;
+ }
+ p{
+     text-align: center;
+     line-height: 200%;
+ 
+ }
+ 
+ #menu {
+     text-align: center;
+     font-weight: 500;
+ }
+ /*nav bar transitions and styles*/
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+ }
+ nav ul li {
+    display: inline;
+     margin: 10px;
+     width: 40px;
+     padding: 10px;
+     position: relative;
+     min-width: 50%;
+ }
+ nav ul li a {
+     background: #DE95A3;
+     color: #fff;
+     display: inline-block;
+     font:  16px sans-serif;
+     margin-top: 1em;
+     padding: 9px 8px;
+     text-align:left;
+     text-decoration: none;
+     -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+         -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+             transition: all .25s ease;
+ }
+ nav .dropdown:after {
+     content: ' ';
+ }
+ /*nav hover animation*/
+ nav li:hover a {
+     text-align: left;
+     background: #492C99;
+     color: #fff;
+ }
+ nav li ul {
+     float: left;
+     left: 0;
+     opacity: 0;
+     position: absolute;
+     visibility: hidden;
+     z-index: 1;
+     transition: all .25s ease;
+ }
+ 
+ nav li:hover ul {
+     width: 50%;
+     text-align: left;
+     opacity: 1;
+     top: 45px;
+     visibility:visible;
+ }
+ 
+ nav li ul li:hover {
+     background: #de95a3;
+     text-align: center;
+     margin-left: 3%;
+ }
+ 
+ nav li ul li a{
+     width: 8em;
+     padding: 9px 8px;
+ }
+ nav li ul li a:hover {
+     width: 10em;
+     background: #de95a3;
+ }
+ 
+ /* Clearfix */
+             
+ .cf{ 
+     background-color:#de95a3;
+             }
+ 
+ .cf:after, .cf:before {
+     content:"";
+     display:table;
+     
+ }
+ .cf:after {
+     clear:both;
+ }
+ 
+ 
+ .formHead2 {
+     text-align: left;
+ }
+ /*credit to ch.14 tutorial nav bar settings */
+ nav ul {
+     margin-bottom: 1em;
+     padding: 0;
+     list-style-type: none;	
+ }
+ nav li {
+     display: inline;
+     left: 15%;
+ }
+ nav a {
+     width: fit-content;
+     display: inline-block;
+     padding: 9px 20px 5px 20px;
+     border-radius:40px;
+     text-decoration: none;	
+     font-family: Kavivanar;
+     font-weight: 700;
+     color: white;
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+     text-transform:uppercase;
+     font-size: .9em;
+     letter-spacing: .1em;
+     background-color: rgb(232,113,35);
+     background: -webkit-linear-gradient(top, #492c99,rgba(232,113,35,.5));
+     background: -moz-linear-gradient(top, #492c99,rgba(232,113,35,.5));
+     background: -o-linear-gradient(top, #492c99,rgba(232,113,35,.5));
+     background: linear-gradient(top, #492c99,rgba(232,113,35,.5));
+     border: 1px solid #492c99;
+     margin-right: 3px;
+     margin-left: 15px;
+ }
+ /*flexbox layout for header images*/
+ .img_source{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin-top: auto;
+ }
+ .intro{
+     display: inline-block;
+     vertical-align: top;
+     width: 80%;
+     margin-top: 1em;
+     margin-bottom: 1em;
+     text-align: center;
+     border-style: dashed;
+     border-color: #492c99;
+     font-size: 1.5em;
+     font-family: 'Times New Roman', Times, serif;
+ 
+ }
+ .divImg{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    border-style: dashed;
+    border-color: #492c99;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+ 
+ }
+ /*repeat footer image*/
+ .globe{
+     
+     width: 100%;
+     padding: 100px;
+     margin-left: -5%;
+     margin-right: 2em;
+     background: url("assets/globe.png");
+     background-repeat: repeat-x;
+     
+ }
+ /*side menu font and color*/
+ .explore h2{
+     font-family: Kavivanar;
+     font-size: 30px;
+     margin: .01em;
+     
+ }
+ /*side menu background color*/
+ .explore {
+     display: inline-block;
+     padding: .4em;
+     background-color: #de95a3;
+     text-align: left;
+     width: 100%;
+     height: auto;
+ }
+ .subform p{
+     text-align: left;
+ }
+ 
+   li{
+       display: inline-block;
+     color: #492c99;
+     font-family: Open Sans;
+     font-size: 20px;
+     text-align: center;
+     line-height: 1.6em;
+     }
+ /*fig caption for images ch.14 tutorials*/
+ .gallery figure {
+     display: inline-block;
+     width: 300px;
+     height: 210px;
+     margin: 15px;
+     position: relative;
+ }
+ .gallery figcaption {
+     position: absolute;
+     top: 50%;
+     bottom: -70%;
+     background-color: rgba(153,153,153,.9);
+     padding: 20px;
+     font-family: Kavivanar;
+     font-size: 13px;
+     font-weight: 400;
+     color: white;
+     opacity: 0;
+     transition: opacity .75s ease-out;
+ }
+ .gallery figure:hover figcaption {
+     opacity: 1;
+ }
